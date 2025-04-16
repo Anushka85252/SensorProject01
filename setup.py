@@ -24,3 +24,9 @@ setup(
     
 )
 #(C:\Users\HP\Desktop\Pwskill\pwskill) C:\Users\HP\Desktop\Pwskill>pip list - environment path
+
+#MongoDB user name :anu
+# password: 171201
+# url :mongodb+srv://anu:<db_password>@cluster0.wy20ogo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+# python -m pip install "pymongo[srv]"
+# mongodb+srv://anu:171201@cluster0.wy20ogo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
