@@ -5,7 +5,7 @@ import pandas as pd
 import pickle
 from src.logger import logging
 from src.exception import CustomException
-from flask import request 
+from flask import Request 
 from src.constant import * 
 from src.utils.main_utils import MainUtils
 from dataclasses import dataclass
@@ -19,7 +19,7 @@ class PredictionPipelineConfig:
     prediction_file_path: str = os.path.join(prediction_output_dirname,prediction_file_name)
 
 class PredictionPipeline:
-    def __init__(self,request: request):
+    def __init__(self,request: Request):
 
         self.request = request
         self.utils = MainUtils()
