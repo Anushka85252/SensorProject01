@@ -26,7 +26,7 @@ def train_route():
         return "Training Completed."
     
     except Exception as e:
-        raise CustomException (e,sys)
+        raise CustomException (e,sys) from e
     
 
 @app.route('/predict', methods = ['POST','GET'])
@@ -51,7 +51,7 @@ def upload():
         else:
             return render_template('upload_file.html')
     except Exception as e:
-        raise CustomException(e,sys)
+        raise CustomException(e,sys) from e
     
 
 

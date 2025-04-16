@@ -37,7 +37,7 @@ class PredictionPipeline:
 
             return pred_file_path
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
         
     
     def predict(self, features):
@@ -53,7 +53,7 @@ class PredictionPipeline:
 
             return preds
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
         
 
     def get_predicted_dataframe(self, input_dataframe_path: pd.DataFrame):
@@ -89,5 +89,5 @@ class PredictionPipeline:
 
             return self.prediction_pipleine_config
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
 

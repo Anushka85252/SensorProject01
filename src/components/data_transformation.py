@@ -40,7 +40,7 @@ class DataTransformation:
 
             return data
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
         
     
     def get_data_transformer_object(self):
@@ -59,7 +59,7 @@ class DataTransformation:
 
             return preprocessor
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
         
     def initiate_data_transformation(self):
 

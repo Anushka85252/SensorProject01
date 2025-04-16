@@ -89,7 +89,7 @@ class ModelTrainer:
 
 
         except Exception as e:
-            raise CustomException(e, sys)
+            raise CustomException(e, sys) from e
 
 
 
@@ -138,7 +138,7 @@ class ModelTrainer:
 
 
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
        
     def finetune_best_model(self,
                             best_model_object:object,
@@ -174,7 +174,7 @@ class ModelTrainer:
             return finetuned_model
        
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
 
 
 
@@ -288,4 +288,4 @@ class ModelTrainer:
 
 
         except Exception as e:
-            raise CustomException(e, sys)
+            raise CustomException(e, sys) from e
